@@ -17,8 +17,9 @@ body {
 time {
   color: rgb(35, 209, 137);
   height: 100%;
-  padding: 20px;
-  font-size: 200px;
+  padding: 40px;
+  font-size: 175px;
+  line-height: 75%;
 }
 
 
