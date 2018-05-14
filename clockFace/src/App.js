@@ -35,6 +35,15 @@ class App extends Component {
       <div className="App">
         <Clock format={"h:mm a"} ticking={true} timezone={"US/Mountain"} />
         <div>Alarm is {alarmClockOn ? " On" : " Off"}</div>
+        <div>
+            <button type="button" onClick="startAlarm()">Start Alarm</button>
+            <button type="button" onClick="stopAlarm()">Stop Alarm</button>
+            <button type="button" onClick="toggleLight()">Toggle Light</button>
+            <audio  id="sound" controls loop hidden>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"/>
+            </audio>
+            <img id="light" src="" alt=""></img>
+        </div>
       </div>
     );
   }
